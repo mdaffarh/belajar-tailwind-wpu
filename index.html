@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Belajar Tailwind</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        #toggle:checked ~ label div.toggle-circle{
+            @apply translate-x-3;
+        }
+    </style> -->
+</head>
+<body class="dark:bg-slate-800 dark:text-slate-100">
+<h1 class="text-center text-6xl font-bold my-5 ">
+        Belajar
+    <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent ">
+        Tailwind CSS
+    </span>
+</h1>
+
+<section class="mb-10 h-40 bg-gradient-to-br from-rose-300 to-orange-400  ">
+
+</section>
+
+
+
+<section class="mb-10 font-sans max-w-3xl mx-auto">
+    <h2 class="mb-2 text-4xl font-bold">Belajar Mengenai Typography pada TailwindCSS</h2>
+    <div class="mb-4 text-lg text-gray-500">
+        By <a href="text-gray-700 font-semibold ">Daffa Rizmawan</a>, 24 Juli 2024
+    </div>
+    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="" class="underline font-semibold text-rose-400 ">dudul</a> Odit maiores doloremque quisquam ad omnis, corrupti, aliquam optio aspernatur eligendi eum iure tempore, fugiat aliquid! Itaque reiciendis ipsum sit maiores id, a tempora aperiam culpa quae ad aliquid minima exercitationem quos veritatis impedit perferendis deleniti vero tempore! Culpa vel ullam quibusdam?</p>
+    <blockquote class="mb-4 italic font-thin text-xl ">
+        "Lorem ipsum, dolor sit aborum modi eos omnis dolorum!"
+    </blockquote>
+    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, debitis fugiat quam dolorem, quisquam voluptates maxime modi saepe qui voluptatem harum? Aliquid aut odit quasi odio repellat quidem, esse modi amet non voluptates sapiente ea veritatis! Quos quibusdam tempora illo laborum, doloribus minima eum consequuntur aliquid, dicta a magni expedita?</p>
+</section>
+
+<div class="max-w-xl h-96 mx-auto mt-[42px] bg-gradient-to-tr from-[#9350ff] overflow-y-scroll" style="background-image: url('https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?q=80&w=908&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+
+    <p class="p-5 text-2xl text-white">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta est blanditiis possimus facere alias qui at quis nulla recusandae commodi? Culpa harum dolorem expedita accusantium doloribus illum recusandae, aliquid saepe similique inventore, maxime, ea minima voluptatum! Maxime voluptates aut temporibus sed quia error! Quisquam qui velit, sequi quos recusandae vero ipsam exercitationem ex nemo illo quo vel hic quod temporibus, tenetur cum! Temporibus aspernatur hic provident ratione odio perferendis necessitatibus officia voluptate voluptas molestiae, dolores consequuntur inventore nam reiciendis ullam obcaecati consequatur. Corporis debitis aliquam ducimus modi sit aut labore deleniti, consectetur voluptas, porro iure hic officia perferendis reprehenderit at quia natus dolorem cupiditate saepe expedita. Blanditiis ex, nihil odio aut quas aperiam reprehenderit autem officiis quod error dolorem nemo impedit doloribus quisquam assumenda temporibus. Nulla consequatur quisquam earum hic, sunt eos aspernatur? Maxime dolorum obcaecati libero. Ab hic ratione animi exercitationem id recusandae facere et eos error sunt cumque natus doloremque perspiciatis eligendi rem modi accusamus reiciendis, inventore vel adipisci reprehenderit repudiandae? Vitae quos earum necessitatibus? Laborum recusandae magnam aliquam sit placeat est, harum eveniet qui blanditiis fuga, nostrum facilis, sint quisquam? Magni ratione vero autem cupiditate, quod sed, ex sapiente similique voluptas reprehenderit facilis ducimus animi laboriosam itaque!
+    </p>
+</div>
+
+<div class="mt-32 max-w-xl mx-auto h-96 bg-orange-400 shadow-lg shadow-orange-400 rounded-3xl bg-cover overflow-hidden bg-blend-multiply" style="background-image: url(./img/white-flowers.jpg);">
+    <!-- <div class="w-full h-full bg-purple-300 mix-blend-multiply"></div> -->
+</div>
+
+<div class="mt-32 max-w-xl mx-auto h-96 bg-orange-400 shadow-lg shadow-orange-400 rounded-3xl bg-cover flex" style="background-image: url(./img/white-flowers.jpg);">
+    <div class="w-[200px] h-[200px] bg-purple-200/50  m-auto backdrop-blur-md rounded-full"></div>
+</div>
+
+<hr class="my-20">
+<h2 class="text-center font-semibold text-3xl mb-3">Pseudo-class & Dark Mode</h2>
+
+<div class="flex justify-center">
+    <span class="text-small text-slate-500 mr-2">Light</span>
+    <input type="checkbox" id="toggle" class="hidden">
+    <label for="toggle">
+        <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+            <div class="w-4 h-4 bg-white rounded-full toggle-circle dark:translate-x-3">
+
+            </div>
+        </div>
+    </label>
+    <span class="text-small text-slate-500 ml-2">Dark</span>
+</div>
+
+
+<button class="my-10 bg-sky-500 px-5 py-2 rounded text-white font-semibold font block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100">Submit</button>
+
+<div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-noto hover:bg-slate-500  group dark-hover-bg-slate-200 ">
+    <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800">Card</h5>
+    <p class="text-slate-600 group-hover:text-white selection:bg-slate-800 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 
+    dark:group-hover:text-slate-800">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi ratione cumque enim voluptate nesciunt dolores atque aut. Quas pariatur earum harum repellendus, sit beatae consequatur? Commodi recusandae dicta a quo perspiciatis exercitationem? Veniam, aspernatur beatae.</p>
+</div>
+
+<div class="max-w-lg border border-slate-200 rounded-xl mx-auto shadow-md font-sans p-5">
+    <h3 class="mb-3">Foerm</h3>
+    <form action="">
+        <label for="email">
+            <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-600 after:ml-0.5 ">Email</span>
+            <input 
+            type="email" 
+            
+            id="email" name="email" placeholder="Masukan Email" class="px-3 py-2 border shaodw rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-800 focus:border-sky-800 invalid:text-pink-700 invalid:focus:ring-pink-700
+            invalid:focus:border-pink-700 peer ">
+            <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible  ">Email tidak valid</p>
+        </label>
+    </form>
+
+</div>
+
+<h2 class="text-center font-semibold text-3xl mb-3">Transform, Transition, Animation</h2>
+<div class="my-20">
+    <div class="w-40 h-40 bg-indigo-500 mx-auto rounded-lg shadow-lg hover:rotate-180 origin-top-right animate-spin hover:bg-pink-500  transition"></div>
+
+    <div class="w-40 h-40 mx-auto my-20 group">
+        <div class="w-full h-full bg-indigo-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-500 ease-in delay-500 animate-spin"></div>
+    </div>
+    
+    
+    <div class="w-40 h-40 border-white border-8 bg-pink-500 rounded-lg shadow-lg mx-auto animate-spin-fast my-10"></div>
+
+    <div class="w-40 h-40 bg-pink-500 rounded-lg shadow-lg mx-auto animate-ping  my-10 "></div>
+
+    <div class="w-40 h-40 bg-pink-500 rounded-lg shadow-lg mx-auto animate-pulse my-10 "></div>
+     
+    <div class="w-40 h-40 bg-pink-500 rounded-lg shadow-lg mx-auto animate-wiggle  my-10 "></div>
+
+    
+</div>
+<hr class="my-20 border-t-4 ">
+<h2 class="text-center font-semibold text-3xl mb-7">Layouting</h2>
+
+<div class="container mx-auto ">
+    <div class="border rounded-lg shadow-lg p-10 relative">
+        <div class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-0
+        cursor-pointer -translate-x-1/2">
+            <a href="#" class="text-xl m-auto ">
+                🔝
+            </a>
+        </div>
+        <img src="img/white-flowers.jpg" alt="" width="150" class="float-left mr-4 ">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos ipsam aliquid accusantium, eveniet nostrum reiciendis velit minima officiis, dignissimos officia enim consectetur quia. Ab ratione, fugit aperiam fuga odit perferendis eos mollitia ducimus modi eius exercitationem nostrum quos quisquam quasi corrupti illo at recusandae dignissimos culpa blanditiis similique quibusdam incidunt! Quibusdam, quo quae. Eius nemo error nulla placeat ratione vitae modi eum, autem reprehenderit iusto quibusdam perferendis earum porro, sint commodi aperiam at, repellendus nam! Nesciunt eaque, quae voluptatem error harum modi ut illo nobis atque eius aliquam pariatur fuga, exercitationem optio dolores sit quas non odit unde autem.
+        </p>
+    </div>
+</div>
+
+<div class=" container mx-auto border rounded-lg shadow-lg p-10 mt-20 columns-">
+    <img src="img/white-flowers.jpg" alt="Image" class="mb-4">
+    <img src="img/white-flowers.jpg" alt="Image" class="mb-4">
+    <img src="img/white-flowers.jpg" alt="Image" class="mb-4">
+    <img src="img/white-flowers.jpg" alt="Image" class="mb-4">
+    <img src="img/white-flowers.jpg" alt="Image" class="mb-4">
+</div>
+
+<hr class="my-24 border-t-4">
+
+<div class="container py-6 px-6 font-noto max-w-md mx-autsm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:px-0">
+    <div class="lg:p-12 lg:flex-1">
+        <h3 class="text-4xl font-bold text-green-800 sm:text-5xl">White 
+            <span class="bg-gradient-to-r from-green-800 to-yellow-200  bg-clip-text text-transparent">
+                Lilies
+            </span>
+        </h3>
+        <img src="img/white-flowers.jpg" alt="White Lilies" class="my-4 rounded shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden">
+        <h2 class="text-2xl font-semibold text-green-800 sm:mt-8 sm:text-4xl">Dudul Bjir cukup tau sigma</h2>
+        <p class="mt-2 text-green-900 sm:mt-4 sm:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut reprehenderit in explicabo molestiae earum.</p>
+        <div class="mt-4 sm:mt-6">
+            <a href="" class="inline-block px-5 py-3 bg-red-700 text-white font-sans rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm hover:bg-red-600 transition sm:text-base">Subscribe Channel Youtube</a>
+        </div>
+    </div>
+    <div class="hidden lg:flex w-1/2">
+        <img src="img/white-flowers.jpg" alt="White Lilies" class="object-cover rounded-l-3xl">
+    </div>
+</div>
+
+<!-- flex -->
+<h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">My Gallery</h2>
+
+<div class="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly lg:bg-sky-100">
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 sm:mb-0">
+        <img src="img/white-flowers.jpg" alt="White Lilies" class="w-full">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Judul</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, at.</p>
+
+        </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 sm:mb-0">
+        <img src="img/white-flowers.jpg" alt="White Lilies" class="w-full">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Judul</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, at.</p>
+
+        </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 sm:mb-0">
+        <img src="img/white-flowers.jpg" alt="White Lilies" class="w-full">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Judul</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, at.</p>
+
+        </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 sm:mb-0">
+        <img src="img/white-flowers.jpg" alt="White Lilies" class="w-full ">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Judul</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, at.</p>
+
+        </div>
+    </div>
+    <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 lg:w-72 sm:mb-0">
+        <img src="img/white-flowers.jpg" alt="White Lilies" class="w-full">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-slate-700">Judul</div>
+            <p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, at.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="mt-64 p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+    <h2 class="text-xl font-semibold text-slate-700 md:row-start-2 md:col-start-4 md:flex">
+        <span class="self-center">
+            Welcome
+        </span>
+    </h2>
+    <div class="text-lg font-bold text-slate-600 md:row-start-2 md:col-start-2 md:flex">
+        <span class="self-end">
+            Naksu
+        </span>
+    </div>
+    <div class="group grid-card">
+        <div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div>
+    </div>
+    <div class="group grid-card md:col-start-3"><div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div></div>
+    <div class="group grid-card"><div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div></div>
+    <div class="group grid-card"><div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div></div>
+    <div class="group grid-card"><div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div></div>
+    <div class="group grid-card md:col-start-2"><div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div></div>
+    <div class="group grid-card md:col-start-4"><div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div></div>
+    <div class="group grid-card"><div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div></div>
+    <div class="group grid-card md:col-start-3"><div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div></div>
+    <div class="group grid-card"><div class="grid-card-img bg-[url('/img/white-flowers.jpg')]">
+
+        </div></div>
+</div>
+
+<h1>Dudul</h1>
+
+<div class="mb-96"></div>
+
+<script>
+    const checkbox = document.querySelector('#toggle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function(){
+        checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+    })
+</script>
+</body>
+</html>
